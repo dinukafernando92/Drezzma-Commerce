@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Drezzma.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Drezzma.Infrastructure.Persistence
 {
@@ -7,5 +8,7 @@ namespace Drezzma.Infrastructure.Persistence
         public DrezzmaDbContext(DbContextOptions<DrezzmaDbContext> options) : base(options)
         {
         }
+
+        public DbSet<Category> Categories => Set<Category>();
     }
 }
