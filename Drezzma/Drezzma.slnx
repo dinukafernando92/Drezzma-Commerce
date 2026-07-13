@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props.xml" />
+  </Folder>
+  <Project Path="Drezzma.API/Drezzma.API.csproj" />
+  <Project Path="Drezzma.Application/Drezzma.Application.csproj" />
+  <Project Path="Drezzma.Domain/Drezzma.Domain.csproj" />
+  <Project Path="Drezzma.Infrastructure/Drezzma.Infrastructure.csproj" />
+</Solution>
