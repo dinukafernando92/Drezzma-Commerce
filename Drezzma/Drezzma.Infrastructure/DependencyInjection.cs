@@ -1,4 +1,4 @@
-﻿using Drezzma.Infrastructure.Persistence;
+﻿using Drezzma.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
