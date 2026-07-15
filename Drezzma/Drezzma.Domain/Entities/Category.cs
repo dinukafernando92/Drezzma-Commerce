@@ -9,6 +9,7 @@ namespace Drezzma.Domain.Entities
         public bool IsActive { get; set; } = true;
         public string? ImageUrl { get; set; }
         public int DisplayOrder { get; set; }
+        public string Slug { get; set; } = string.Empty;
         public ICollection<Product> Products { get; set; } = new List<Product>();
     }
 }

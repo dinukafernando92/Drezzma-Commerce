@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="8.6.3" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="8.6.0" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
     <PackageReference Include="MediatR" Version="8.0.2" />
   </ItemGroup>
 
@@ -18,7 +19,6 @@
 
   <ItemGroup>
     <Folder Include="Features\Categories\Commands\" />
-    <Folder Include="Features\Categories\DTOs\" />
     <Folder Include="Features\Categories\Validators\" />
     <Folder Include="Features\Categories\Queries\" />
     <Folder Include="Features\Customers\Commands\" />
@@ -34,7 +34,6 @@
     <Folder Include="Features\Products\DTOs\" />
     <Folder Include="Features\Products\Validators\" />
     <Folder Include="Features\Products\Queries\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="Exceptions\" />
   </ItemGroup>
 

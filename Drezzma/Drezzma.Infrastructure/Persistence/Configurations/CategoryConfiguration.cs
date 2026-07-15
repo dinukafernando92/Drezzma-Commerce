@@ -35,6 +35,13 @@ namespace Drezzma.Infrastructure.Persistence.Configurations
                    .WithOne(x => x.Category)
                    .HasForeignKey(x => x.CategoryId)
                    .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Property(c => c.Slug)
+                   .HasMaxLength(100)
+                   .IsRequired();
+
+            builder.HasIndex(c => c.Slug)
+                   .IsUnique();
         }
     }
 }
