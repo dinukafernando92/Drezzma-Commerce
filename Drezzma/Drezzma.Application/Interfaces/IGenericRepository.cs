@@ -9,6 +9,8 @@ namespace Drezzma.Application.Interfaces
 
         Task<TEntity?> GetByIdAsync(Guid id);
 
+        Task<TEntity?> GetTrackedByIdAsync(Guid id);
+
         Task AddAsync(TEntity entity);
 
         void Update(TEntity entity);

@@ -9,6 +9,7 @@ namespace Drezzma.Application.Interfaces
         //Task<Category?> GetByIdAsync(Guid id);
 
         Task<Category?> GetBySlugAsync(string slug);
+        Task<Category?> GetByNameAsync(string name);
 
         //Task AddAsync(Category category);
 

@@ -1,6 +1,6 @@
 ﻿using Drezzma.Application.Features.Categories.DTOs;
 
-namespace Drezzma.Application.Features.Categories.Services
+namespace Drezzma.Application.Features.Categories.Interfaces
 {
     public interface ICategoryService
     {
@@ -10,7 +10,7 @@ namespace Drezzma.Application.Features.Categories.Services
 
         Task<CategoryDto> CreateAsync(CreateCategoryDto dto);
 
-        Task UpdateAsync(Guid id, UpdateCategoryDto dto);
+        Task<CategoryDto> UpdateAsync(Guid id, UpdateCategoryDto dto);
 
         Task DeleteAsync(Guid id);
     }

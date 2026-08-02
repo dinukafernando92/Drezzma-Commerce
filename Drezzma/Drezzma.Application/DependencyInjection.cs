@@ -1,4 +1,6 @@
-﻿using Drezzma.Application.Mapping;
+﻿using Drezzma.Application.Features.Categories.Interfaces;
+using Drezzma.Application.Features.Categories.Services;
+using Drezzma.Application.Mapping;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
@@ -13,6 +15,7 @@ namespace Drezzma.Application
 
             MappingConfig.RegisterMappings();
 
+            services.AddScoped<ICategoryService, CategoryService>();
             return services;
         }
     }

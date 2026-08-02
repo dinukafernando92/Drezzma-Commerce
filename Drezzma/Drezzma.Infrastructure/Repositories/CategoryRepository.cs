@@ -34,6 +34,13 @@ namespace Drezzma.Infrastructure.Repositories
                 .FirstOrDefaultAsync(x => x.Slug == slug);
         }
 
+        public async Task<Category?> GetByNameAsync(string name)
+        {
+            return await _dbSet
+                .AsNoTracking()
+                .FirstOrDefaultAsync(c => c.Name == name.Trim());
+        }
+
         //public async Task AddAsync(Category category)
         //{
         //    await _context.Categories.AddAsync(category);

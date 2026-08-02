@@ -32,6 +32,11 @@ namespace Drezzma.Infrastructure.Repositories
             .FirstOrDefaultAsync(e => e.Id == id);
         }
 
+        public virtual async Task<TEntity?> GetTrackedByIdAsync(Guid id)
+        {
+            return await _dbSet.FirstOrDefaultAsync(e => e.Id == id);
+        }
+
         public virtual async Task AddAsync(TEntity entity)
         {
             await _dbSet.AddAsync(entity);
