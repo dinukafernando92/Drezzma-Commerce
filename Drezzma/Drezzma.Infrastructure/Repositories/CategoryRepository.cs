@@ -14,19 +14,6 @@ namespace Drezzma.Infrastructure.Repositories
             _context = context;
         }
 
-        //public async Task<IReadOnlyList<Category>> GetAllAsync()
-        //{
-        //    return await _context.Categories
-        //        .AsNoTracking()
-        //        .ToListAsync();
-        //}
-
-        //public async Task<Category?> GetByIdAsync(Guid id)
-        //{
-        //    return await _context.Categories
-        //        .FirstOrDefaultAsync(x => x.Id == id);
-        //}
-
         public async Task<Category?> GetBySlugAsync(string slug)
         {
             return await _context.Categories
@@ -41,19 +28,5 @@ namespace Drezzma.Infrastructure.Repositories
                 .FirstOrDefaultAsync(c => c.Name == name.Trim());
         }
 
-        //public async Task AddAsync(Category category)
-        //{
-        //    await _context.Categories.AddAsync(category);
-        //}
-
-        //public void Update(Category category)
-        //{
-        //    _context.Categories.Update(category);
-        //}
-
-        //public void Delete(Category category)
-        //{
-        //    _context.Categories.Remove(category);
-        //}
     }
 }

@@ -26,6 +26,7 @@ namespace Drezzma.Infrastructure
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductVariantRepository, ProductVariantRepository>();
+            services.AddScoped<IProductImageRepository, ProductImageRepository>();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 

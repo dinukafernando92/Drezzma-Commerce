@@ -1,5 +1,4 @@
 ﻿using Drezzma.Domain.Common;
-using System.Drawing;
 
 namespace Drezzma.Domain.Entities
 {

@@ -32,7 +32,6 @@ namespace Drezzma.Application.Features.Categories.Services
         }
         public async Task<CategoryDto> CreateAsync(CreateCategoryDto dto)
         {
-            var slug = SlugHelper.Generate(dto.Name);
             var existingCategory = await _unitOfWork.Categories.GetByNameAsync(dto.Name);
 
             if (existingCategory is not null)

@@ -21,25 +21,6 @@ namespace Drezzma.Infrastructure.Repositories
                 .AsNoTracking()
                 .ToListAsync();
         }
-        //public async Task<ProductVariant?> GetByIdAsync(Guid id)
-        //{
-        //    return await _context.ProductVariants
-        //        .FirstOrDefaultAsync(x => x.Id == id);
-        //}
-
-        //public async Task AddAsync(ProductVariant variant)
-        //{
-        //    await _context.ProductVariants.AddAsync(variant);
-        //}
-
-        //public void Update(ProductVariant variant)
-        //{
-        //    _context.ProductVariants.Update(variant);
-        //}
-
-        //public void Delete(ProductVariant variant)
-        //{
-        //    _context.ProductVariants.Remove(variant);
-        //}
+       
     }
 }

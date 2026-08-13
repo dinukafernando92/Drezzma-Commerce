@@ -29,7 +29,6 @@
     <Folder Include="Features\Orders\Validators\" />
     <Folder Include="Features\Orders\Queries\" />
     <Folder Include="Features\Products\Commands\" />
-    <Folder Include="Features\Products\DTOs\" />
     <Folder Include="Features\Products\Validators\" />
     <Folder Include="Features\Products\Queries\" />
   </ItemGroup>

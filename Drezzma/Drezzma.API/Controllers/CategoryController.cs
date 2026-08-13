@@ -1,7 +1,6 @@
 ﻿using Drezzma.Application.Exceptions;
 using Drezzma.Application.Features.Categories.DTOs;
 using Drezzma.Application.Features.Categories.Interfaces;
-using Drezzma.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Drezzma.API.Controllers
